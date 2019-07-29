@@ -1,0 +1,97 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('images/table.jpg') center/cover no-repeat;
+  /* background-color */
+}
+
+#outer-case {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #100c08;
+  border-radius: 2em;
+  min-height: 32em;
+  width: 20em;
+  transform: rotate(20deg);
+  box-shadow: 1em -1em 1em;
+}
+
+#screen {
+  display: flex;
+  min-height: 29em;
+  text-align: center;
+  justify-content: center;
+  background-color: #f2f3f4;
+  border-radius: 1em;
+  width: 18em;
+}
+
+h2:nth-child(1) {
+  margin-bottom: 0;
+}
+
+h2:nth-child(2) {
+  margin: 0;
+}
+
+button {
+  position: absolute;
+  bottom: 3.5em;
+  left: 8em;
+  width: 8em;
+  height: 3em;
+  border-radius: 1em;
+  background-color: #100c08;
+  padding: 0.5em;
+  color: #f2f3f4;
+  font-weight: 600;
+}
+
+.card {
+  width: 16em;
+  border-radius: 0.5em;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+  transform-origin: center right;
+}
+
+.card-face {
+  position: absolute;
+  border-radius: 1em;
+  backface-visibility: hidden;
+}
+
+.card-face p {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.back,
+.front {
+  background-color: #f2f3f4;
+  height: 26em;
+}
+
+.back h2,
+.front h2 {
+  margin-bottom: 0;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card.flip {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+img {
+  width: 16em;
+}
+
+/* Photo by Tim Mossholder on Unsplash - table */
