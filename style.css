@@ -4,7 +4,12 @@ body {
   justify-content: center;
   align-items: center;
   background: url('images/table.jpg') center/cover no-repeat;
-  /* background-color */
+  background-color: #735b58;
+  margin: 0;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
 }
 
 #outer-case {
@@ -44,10 +49,12 @@ button {
   width: 8em;
   height: 3em;
   border-radius: 1em;
-  background-color: #100c08;
+  box-shadow: 5px 3px 3px #4c4946;
+  background-color: #fefe22;
+  color: #100c08;
   padding: 0.5em;
-  color: #f2f3f4;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .card {
